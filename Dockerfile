@@ -1,5 +1,2 @@
-FROM ubuntu:latest
-WORKDIR /app
-COPY . .
-CMD ["sh", "-c", "cat read.txt"]
-
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/
